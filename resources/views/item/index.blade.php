@@ -10,15 +10,16 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <div>
-            <a href="{{ route('item.create') }}" class="btn btn-primary "> Tambah Barang</a>
+            <a href="{{ route('item.create') }}" class="btn btn-primary my-3"> Tambah Barang</a>
         </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
     </div>
     
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered text-center" id="myTable" width="100%" cellspacing="0">
                 <thead>
-                    <tr>
+                    <tr class="header">
                         <th>No</th>
                         <th>Nama Barang</th>
                         <th>Satuan</th>
